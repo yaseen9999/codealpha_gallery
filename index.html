@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <h1 class="title">Welcome to Yaseen Gallery</h1>
+    </div>
+    <div class="gallery">
+      <!-- Images placed in the grid -->
+      <img
+        src="https://picsum.photos/420/360?random=1"
+        alt="Image 1"
+        onclick="openModal(0)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=2"
+        alt="Image 2"
+        onclick="openModal(1)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=3"
+        alt="Image 3"
+        onclick="openModal(2)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=4"
+        alt="Image 4"
+        onclick="openModal(3)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=5"
+        alt="Image 5"
+        onclick="openModal(4)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=6"
+        alt="Image 6"
+        onclick="openModal(5)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=7"
+        alt="Image 7"
+        onclick="openModal(6)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=8"
+        alt="Image 8"
+        onclick="openModal(7)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=9"
+        alt="Image 9"
+        onclick="openModal(8)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=10"
+        alt="Image 10"
+        onclick="openModal(9)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=11"
+        alt="Image 11"
+        onclick="openModal(10)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=12"
+        alt="Image 12"
+        onclick="openModal(11)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=13"
+        alt="Image 13"
+        onclick="openModal(12)"
+      />
+      <img
+        src="https://picsum.photos/420/360?random=14"
+        alt="Image 14"
+        onclick="openModal(13)"
+      />
+    </div>
+
+    <!-- Modal for image preview -->
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modal-image" class="modal-content" />
+      <div class="modal-buttons">
+        <button onclick="prevImage()">Previous</button>
+        <button onclick="nextImage()">Next</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
